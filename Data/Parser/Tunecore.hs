@@ -8,9 +8,8 @@ module Data.Parser.Tunecore (
 ) where
 
 
-import Data.Csv
+import Data.Csv (Parser, FromNamedRecord(..), NamedRecord, (.:))
 import qualified Data.Attoparsec.ByteString.Char8 as A
-import Data.Attoparsec.ByteString.Char8 (Parser)
 import Data.Text (Text)
 import Control.Applicative
 import Data.Time.Calendar (Day, fromGregorian)
